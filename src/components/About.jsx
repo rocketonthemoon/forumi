@@ -4,7 +4,7 @@ import Footer from "./shared/Footer";
 
 function About() {
   return (
-    <div>
+    <>
       <Header />
       <h1>About Me</h1>
       <p>
@@ -16,7 +16,7 @@ function About() {
         quae, impedit harum atque?
       </p>
       <Footer />
-    </div>
+    </>
   );
 }
 

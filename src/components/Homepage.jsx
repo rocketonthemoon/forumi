@@ -2,14 +2,14 @@ import React from "react";
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 
-function Home() {
+function Homepage() {
   return (
     <>
       <Header />
-      <h1>This is a Forum</h1>
+      <h1>This is the homepage</h1>
       <Footer />
     </>
   );
 }
 
-export default Home;
+export default Homepage;

@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <div>
-      <h1>Forumi</h1>
+      <h1>
+        <Link to="/">Forumi</Link>
+      </h1>
       <div>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
           <Link to="/about">About</Link>
           <Link to="/contact">Contact</Link>
           <Link to="/login">Login</Link>
