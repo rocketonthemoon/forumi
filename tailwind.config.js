@@ -2,7 +2,11 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        beams: "url('/src/assets/images/beams.jpg')",
+      },
+    },
   },
   plugins: [],
 };

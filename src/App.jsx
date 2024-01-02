@@ -11,8 +11,8 @@ import GlobalStyles from "./components/shared/GlobalStyles";
 
 function App() {
   return (
-    <GlobalStyles>
-      <Router>
+    <Router>
+      <GlobalStyles>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/home" element={<Home />} />
@@ -22,8 +22,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
-    </GlobalStyles>
+      </GlobalStyles>
+    </Router>
   );
 }
 
