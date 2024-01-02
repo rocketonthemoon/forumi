@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import { GlobalContext } from "../context/Global";
 import { Link } from "react-router-dom";
-import land1 from "../assets/images/land1.png";
-import land2 from "../assets/images/land2.png";
-import land3 from "../assets/images/land3.png";
-import land4 from "../assets/images/land4.png";
-import land5 from "../assets/images/land5.png";
+import land1 from "../assets/images/landing-page/land1.png";
+import land2 from "../assets/images/landing-page/land2.png";
+import land3 from "../assets/images/landing-page/land3.png";
+import land4 from "../assets/images/landing-page/land4.png";
+import land5 from "../assets/images/landing-page/land5.png";
 
 function Homepage() {
   const { rendered, setRendered } = React.useContext(GlobalContext);
@@ -46,13 +46,13 @@ function Homepage() {
           For heavensake don't turn this into a dating site.
         </h1>
       </div>
-      <div className="flex h-[80vh] items-center justify-around flex-col">
+      <div className="flex h-[80vh] items-center justify-around flex-col border-b-2">
         <h1 className="text-8xl text-center">
           join today for the best experience of your life.
         </h1>
         <ul>
           <li className="px-8 py-4 rounded-lg bg-transparent text-black ring-2 hover:cursor-pointer ring-pink-500 text-3xl hover:bg-pink-500 hover:text-white">
-            <Link to="/register">Register</Link>
+            <Link to="/register">Join Now</Link>
           </li>
         </ul>
       </div>

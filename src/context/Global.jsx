@@ -2,12 +2,12 @@ import React from "react";
 
 export const GlobalContext = React.createContext();
 
-export function GlobalProvider(props) {
+export function GlobalProvider({ children }) {
   const [rendered, setRendered] = React.useState("");
 
   return (
     <GlobalContext.Provider value={{ rendered, setRendered }}>
-      {props.children}
+      {children}
     </GlobalContext.Provider>
   );
 }

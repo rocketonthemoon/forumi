@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
-import InvertLogo from "../../assets/images/invert-logo.png";
+import InvertLogo from "../../assets/images/logo/invert-logo.png";
 import { GlobalContext } from "../../context/Global";
 
 function Header() {
