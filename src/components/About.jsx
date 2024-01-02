@@ -1,6 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { GlobalContext } from "../context/Global";
 
 function About() {
+  const { rendered, setRendered } = React.useContext(GlobalContext);
+  useEffect(() => {
+    setRendered("about");
+  }, []);
+
   return (
     <>
       <div>

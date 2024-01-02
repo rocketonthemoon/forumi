@@ -8,22 +8,25 @@ import Register from "./components/Register";
 import NotFound from "./components/NotFound";
 import Homepage from "./components/Homepage";
 import GlobalStyles from "./components/shared/GlobalStyles";
+import { GlobalProvider } from "./context/Global";
 
 function App() {
   return (
-    <Router>
-      <GlobalStyles>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/register" element={<Register />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </GlobalStyles>
-    </Router>
+    <GlobalProvider>
+      <Router>
+        <GlobalStyles>
+          <Routes>
+            <Route path="/" element={<Homepage />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </GlobalStyles>
+      </Router>
+    </GlobalProvider>
   );
 }
 
